@@ -1,9 +1,9 @@
 {
 	"$schema": "https://schemas.wp.org/trunk/block.json",
 	"apiVersion": 3,
-	"name": "interactivity/behaviors-blocks",
+	"name": "interactivity/behavior-block",
 	"version": "0.1.0",
-	"title": "Behaviors Block",
+	"title": "Behavior",
 	"category": "widgets",
 	"icon": "media-interactive",
 	"description": "An interactive block with the Interactivity API.",
@@ -11,7 +11,7 @@
 	"supports": {
 		"interactivity": true
 	},
-	"textdomain": "behaviors-blocks",
+	"textdomain": "behavior-block",
 	"editorScript": "file:./index.js",
 	"editorStyle": "file:./index.css",
 	"style": "file:./style-index.css",

@@ -12,7 +12,6 @@ import { __ } from '@wordpress/i18n';
  * @see https://developer.wordpress.org/block-editor/reference-guides/packages/packages-block-editor/#useblockprops
  */
 import { useBlockProps, InnerBlocks } from '@wordpress/block-editor';
-import { RichText } from '@wordpress/block-editor';
 
 /**
  * The edit function describes the structure of your block in the context of the
@@ -26,19 +25,12 @@ import { RichText } from '@wordpress/block-editor';
  *
  * @return {Element} Element to render.
  */
-export default function Edit( { attributes, setAttributes } ) {
+export default function Edit() {
 	const blockProps = useBlockProps();
 
 	return (
 		<div { ...blockProps }>
 			<InnerBlocks />
-		</div>
-		
-			// <RichText
-			// 	value={ attributes.content }
-			// 	onChange={ ( content ) => setAttributes( { content } ) }
-			// 	placeholder={ __( 'Add content here...' ) }
-			// />
-			
+		</div>		
 	);
 }
